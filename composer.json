@@ -1,0 +1,23 @@
+{
+	"name": "andyfarmer/wp101",
+	"description": "Starting Wordpress",
+	"authors": [
+		{
+			"name": "DDEV-Local User",
+			"email": "nobody@example.com"
+		}
+	],
+	"extra": {
+		"wordpress-install-dir": "wp"
+	},
+	"require": {
+		"roots/wordpress": "^6.3",
+		"oscarotero/env": "^2.1",
+		"vlucas/phpdotenv": "^5.5"
+	},
+	"config": {
+		"allow-plugins": {
+			"roots/wordpress-core-installer": true
+		}
+	}
+}
