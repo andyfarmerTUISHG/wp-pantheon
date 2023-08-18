@@ -93,6 +93,27 @@ $redis_server = array(
 	'port' => env('CACHE_PORT'),
 );
 
+/**
+ * DB settings.
+ */
+// define( 'DB_NAME', env( 'DB_NAME' ) );
+// define( 'DB_USER', env( 'DB_USER' ) );
+// define( 'DB_PASSWORD', env( 'DB_PASSWORD' ) );
+// define( 'DB_HOST', env( 'DB_HOST' ) ? env( 'DB_HOST' ) : 'localhost' );
+// define( 'DB_CHARSET', 'utf8mb4' );
+// define( 'DB_COLLATE', '' );
+// $table_prefix = env( 'DB_PREFIX' ) ?: 'wp_'; // phpcs:ignore
+
+// if ( env( 'DATABASE_URL' ) ) {
+// 	$dsn = (object) wp_parse_url( env( 'DATABASE_URL' ) );
+
+// 	define( 'DB_NAME', substr( $dsn->path, 1 ) );
+// 	define( 'DB_USER', $dsn->user );
+// 	define( 'DB_PASSWORD', isset( $dsn->pass ) ? $dsn->pass : null );
+// 	define( 'DB_HOST', isset( $dsn->port ) ? "{$dsn->host}:{$dsn->port}" : $dsn->host );
+// }
+
+
 // Include for settings managed by ddev.
 $ddev_settings = dirname(__FILE__) . '/wp-config-ddev.php';
 if (is_readable($ddev_settings) && !defined('DB_USER') && getenv('IS_DDEV_PROJECT') == 'true') {
