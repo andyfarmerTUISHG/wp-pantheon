@@ -8,5 +8,5 @@ Experimenting with a project that is connected to Pantheon, with Redis, with DDE
 
 - `ddev start`
 - `ddev composer install`
-- `ddev launch`
-- `ddev launch -m`
+- `ddev launch` for the Site
+- `ddev launch -m` for Mailhog

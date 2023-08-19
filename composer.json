@@ -23,7 +23,9 @@
 	},
 	"require": {
 		"php": ">=8.0",
-		"composer/installers": "^1.8"
+		"composer/installers": "^1.8",
+		"wpackagist-theme/neve": "^3.6",
+		"wpackagist-plugin/wp-redis": "^1.4"
 	},
 	"require-dev": {
 		"roots/wordpress": "6.3",
