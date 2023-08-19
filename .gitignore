@@ -9,7 +9,11 @@ vendor
 # --- Root
 /*
 !.gitignore
+!.env.example
 !.ddev
+!.ddev/config.yaml
+!.ddev/docker-compose.redis.yaml
+!.ddev/docker-compose.redis-commander.yaml
 
 # --- WordPress
 !wp-content/
