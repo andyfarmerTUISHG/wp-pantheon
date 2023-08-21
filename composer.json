@@ -1,0 +1,44 @@
+{
+	"name": "andyfarmer/wp101",
+	"description": "Starting Wordpress",
+	"repositories":[
+		{
+		  "type":"composer",
+		  "url":"https://wpackagist.org"
+		}
+	],
+	"authors": [
+		{
+			"name": "DDEV-Local User",
+			"email": "nobody@example.com"
+		}
+	],
+	"extra": {
+		"installer-paths": {
+			"wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+			"wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+			"wp-content/themes/{$name}/": ["type:wordpress-theme"]
+		  },
+		"wordpress-install-dir": "wp"
+	},
+	"require": {
+		"php": ">=8.0",
+		"composer/installers": "^1.8",
+		"wpackagist-theme/neve": "^3.6",
+		"wpackagist-plugin/wp-redis": "^1.4"
+	},
+	"require-dev": {
+		"roots/wordpress": "6.3",
+		"vlucas/phpdotenv": "^4.1.5",
+		"oscarotero/env": "^2.0"
+	},
+	"scripts": {
+	  "wp": "wp"
+	},
+	"config": {
+		"allow-plugins": {
+			"roots/wordpress-core-installer": true,
+			"composer/installers": true
+		}
+	}
+}
